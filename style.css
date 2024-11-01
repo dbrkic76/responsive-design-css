@@ -6,7 +6,15 @@
   font-family: Roboto-Regular;
   src: url(assets/fonts/Roboto-Regular.ttf);
 }
-
+@font-face {
+  font-family: Roboto-Light;
+  src: url(assets/fonts/Roboto-Light.ttf);
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
 body {
   padding: 0px;
   margin: 0px;
@@ -25,6 +33,7 @@ img {
 }
 
 .main-header .container {
+  margin-top: 30px;
   display: flex;
   align-items: center;
   justify-content: space-around;
@@ -67,9 +76,11 @@ img {
 }
 
 .read-more {
+  margin-top: 20px;
   display: flex;
   flex-direction: column;
-  align-content: baseline;
+  justify-content: space-evenly;
+  align-items: center;
   font-family: Roboto-Regular;
   font-size: large;
   letter-spacing: 1px;
@@ -80,12 +91,114 @@ img {
   background-size: cover;
 }
 .read-more button {
+  width: 120px;
   background-color: rgb(51, 105, 230);
   border: none;
-  border-radius: 14px;
+  border-radius: 20px;
   padding: 10px 15px;
   text-align: center;
   text-decoration: none;
   letter-spacing: 2px;
   color: white;
+}
+.read-more p {
+  padding-top: 60px;
+  text-align: center;
+  letter-spacing: 3px;
+}
+.who-we-are-title {
+  margin-top: 20px;
+  font-family: Roboto-Light;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.who-we-are-title h2 {
+  margin-bottom: 5px;
+}
+/*.span-flex {
+}*/
+.span-l {
+  display: inline-block;
+  margin-bottom: 10px;
+  border: 1px solid black;
+  width: 50px;
+  margin-right: 10px;
+}
+.span-m {
+  display: inline-block;
+  border: 2px solid black;
+  width: 20px;
+  height: 20px;
+  transform: rotate(45deg);
+}
+.span-r {
+  display: inline-block;
+  margin-bottom: 10px;
+  border: 1px solid black;
+  width: 50px;
+  margin-left: 10px;
+}
+.who-we-are-content {
+  font-family: Roboto-Regular;
+  font-size: smaller;
+  padding: 30px;
+  line-height: 20px;
+}
+.who-we-are-content h3 {
+  color: rgb(127, 194, 247);
+}
+/*.arrow {
+  display: inline-block;
+  width: 100px;
+  height: 73.5px;
+  background: #f39c12;
+  clip-path: polygon(0 31%, 63.2% 31%, 63.2% 0, 100% 50%, 63.2% 100%, 63.2% 69%, 0 69%);
+}*/
+.who-are-we-list {
+  line-height: 30px;
+}
+.we-make-your-dream-home {
+  margin-top: 20px;
+}
+.what-people-say-title {
+  margin-top: 20px;
+  font-family: Roboto-Light;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.what-people-say-title h2 {
+  margin-bottom: 5px;
+}
+.testimony {
+  font-family: Roboto-Bold;
+  background-color: rgb(127, 194, 247);
+  height: 150px;
+}
+.testimony img {
+  margin-right: 20px;
+  padding: 3px;
+  border: 3px solid white;
+  border-radius: 25px;
+  width: 50px;
+  height: 50px;
+}
+.flex-box {
+  align-items: center;
+  padding: 20px;
+  color: black;
+  display: flex;
+  flex-direction: row;
+}
+.flex-box p {
+}
+.flex-box span {
+  margin-bottom: 20px;
+}
+.lorem {
+  padding-left: 20px;
 }
